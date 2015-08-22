@@ -6,6 +6,7 @@
     <dimen name="five">5dp</dimen>
     <dimen name="ten">10dp</dimen>
     <dimen name="twenty">20dp</dimen>
+    <dimen name="twenty_five">25dp</dimen>
     <dimen name="thirty">30dp</dimen>
     <dimen name="fourty">40dp</dimen>
     <dimen name="fifty">50dp</dimen>
