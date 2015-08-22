@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/profile_header" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header" >
+
+        <TableRow
+            style="@style/menu1_parent_row"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:id="@+id/mytrips_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="1" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/mytrip" />
+
+                <TextView
+                    android:id="@+id/mytrips_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_trips" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_acc_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="2" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/myaccount" />
+
+                <TextView
+                    android:id="@+id/my_acc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_account" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_vehicle_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="3" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/myvehicle" />
+
+                <TextView
+                    android:id="@+id/myvehile_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_vehicle" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            style="@style/menu1_parent_row"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:id="@+id/feedback_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="1" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/feedback" />
+
+                <TextView
+                    android:id="@+id/feedback_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feedback" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/vehicle_offers_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="2" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/view_offer" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_offers" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/payments_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="3" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/payment" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/payments" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            style="@style/menu1_parent_row"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:id="@+id/driver_guide_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="1" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/driver_guide" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/driver_guide" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/garage_support_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="2" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/garage_support" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/guarage_support" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/request_ll"
+                style="@style/menu1_parent_ll"
+                android:layout_column="3" >
+
+                <ImageView
+                    style="@style/menu1_icon"
+                    android:src="@drawable/request" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/request" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <include
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/main_footer" />
+
+</RelativeLayout>

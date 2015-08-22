@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/logo_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/logo"
+            android:text="@string/sigma_taxi"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/tertiary_text_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/logo_header_text"
+            android:layout_toRightOf="@+id/logo"
+            android:layout_below="@+id/logo_header_text"
+            android:layout_marginLeft="10dip"
+            android:text="@string/dedicated_to_dedication" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dip" >
+
+        <LinearLayout
+            android:id="@+id/ll_loginHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/shape_top_round_corners"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/iv_loginBg"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:background="@drawable/shape_circle_border"
+                android:src="@drawable/profile_pic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="10dip"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:text="@string/driver_login" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_phNumberLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_alignLeft="@+id/ll_loginHeader"
+            android:layout_alignRight="@+id/ll_loginHeader"
+            android:layout_below="@+id/ll_loginHeader"
+            android:layout_centerHorizontal="true"
+            android:background="@color/transperant_strip_op_90"
+            android:gravity="center_vertical"
+            android:padding="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:text="+91" />
+
+            <View
+                android:layout_width="1dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dip"
+                android:layout_marginTop="2dip" />
+
+            <EditText
+                android:id="@+id/et_phNumber"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/phone_number_hint"
+                android:inputType="numberDecimal" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_loginButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_below="@+id/ll_phNumberLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bgftr"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_loginButton"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_margin="30dp"
+                android:background="@drawable/selector_black_button"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
