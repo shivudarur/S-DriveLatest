@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/rl_home_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:orientation="vertical"
+        android:background="@color/transperant_strip_op_90" >
+
+        <Button
+            android:id="@+id/btn_homeRenewal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_margin="10dp"
+            android:background="@drawable/selector_black_button"
+            android:text="@string/renewal_alert"
+            android:textColor="@color/white" />
+        <include layout="@layout/horizontal_line"/>
+        <LinearLayout
+            android:id="@+id/ll_loginHeader"
+            android:layout_width="fill_parent"
+            android:layout_height="70dip"
+            android:layout_below="@+id/btn_homeRenewal"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_loginButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip"
+        android:layout_below="@+id/rl_home_options"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/bgftr"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp" >
+
+        <Button
+            android:id="@+id/btn_current_day_offers"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_special_offer"
+            android:background="@drawable/selector_orange_button"
+            android:text="@string/current_day_offers"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/iv_special_offer"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_alignTop="@+id/btn_current_day_offers"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/special_offer" />
+    </RelativeLayout>
+
+</RelativeLayout>
