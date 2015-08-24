@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dip"
+        android:layout_marginTop="@dimen/thirty"
         android:gravity="center_horizontal" >
 
         <ImageView
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/logo"
-            android:layout_marginLeft="10dip"
+            android:layout_marginLeft="@dimen/ten"
             android:layout_toRightOf="@+id/logo"
             android:text="@string/sigma_taxi"
             android:textAppearance="@android:style/TextAppearance.Large"
@@ -35,7 +35,7 @@
             android:layout_alignRight="@+id/logo_header_text"
             android:layout_toRightOf="@+id/logo"
             android:layout_below="@+id/logo_header_text"
-            android:layout_marginLeft="10dip"
+            android:layout_marginLeft="@dimen/ten"
             android:text="@string/dedicated_to_dedication" />
     </RelativeLayout>
 
@@ -43,12 +43,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_margin="20dip" >
+        android:layout_margin="@dimen/twenty" >
 
         <LinearLayout
             android:id="@+id/ll_loginHeader"
             android:layout_width="fill_parent"
-            android:layout_height="70dip"
+            android:layout_height="@dimen/seventy"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="15dip"
             android:layout_marginRight="15dip"
@@ -57,8 +57,8 @@
 
             <ImageView
                 android:id="@+id/iv_loginBg"
-                android:layout_width="60dip"
-                android:layout_height="60dip"
+                android:layout_width="@dimen/sixty"
+                android:layout_height="@dimen/sixty"
                 android:background="@drawable/shape_circle_border"
                 android:src="@drawable/profile_pic" />
 
@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_margin="10dip"
+                android:layout_margin="@dimen/ten"
                 android:textAppearance="@android:style/TextAppearance.Large"
                 android:text="@string/driver_login" />
         </LinearLayout>
@@ -74,27 +74,23 @@
         <LinearLayout
             android:id="@+id/ll_phNumberLayout"
             android:layout_width="fill_parent"
-            android:layout_height="70dip"
+            android:layout_height="@dimen/seventy"
             android:layout_alignLeft="@+id/ll_loginHeader"
             android:layout_alignRight="@+id/ll_loginHeader"
             android:layout_below="@+id/ll_loginHeader"
             android:layout_centerHorizontal="true"
             android:background="@color/transperant_strip_op_90"
             android:gravity="center_vertical"
-            android:padding="20dip" >
+            android:padding="@dimen/twenty" >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="10dip"
+                android:layout_marginLeft="@dimen/ten"
                 android:text="+91" />
 
-            <View
-                android:layout_width="1dip"
-                android:layout_height="fill_parent"
-                android:layout_marginBottom="2dip"
-                android:layout_marginTop="2dip" />
+            <include layout="@layout/vertical_line"/>
 
             <EditText
                 android:id="@+id/et_phNumber"
@@ -109,7 +105,7 @@
         <LinearLayout
             android:id="@+id/ll_loginButtonLayout"
             android:layout_width="fill_parent"
-            android:layout_height="70dip"
+            android:layout_height="@dimen/seventy"
             android:layout_below="@+id/ll_phNumberLayout"
             android:layout_centerHorizontal="true"
             android:background="@drawable/bgftr"
@@ -117,12 +113,9 @@
 
             <Button
                 android:id="@+id/btn_loginButton"
-                android:layout_width="fill_parent"
-                android:layout_height="50dip"
-                android:layout_margin="30dp"
-                android:background="@drawable/selector_black_button"
-                android:text="@string/login"
-                android:textColor="@color/white" />
+                android:layout_margin="@dimen/thirty"
+                style="@style/black_button"
+                android:text="@string/login"/>
         </LinearLayout>
     </RelativeLayout>
 
