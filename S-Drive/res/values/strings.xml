@@ -10,10 +10,13 @@
     <string name="phone_number_hint"><font size="9">Enter Your 10 Digit Mobile Number</font></string>
     <string name="driver_login">Driver Login</string>
     <string name="login">LOGIN</string>
+    <string name="pay_in_advance">Pay In Advance</string>
+    <string name="continue_str">Continue</string>
     <string name="dear">Dear</string>
     <string name="last_visited">Last Visited</string>
     <string name="renewal_alert">Renewal Alert</string>
     <string name="business_limit">Business Limit</string>
+    <string name="used_amount">Used Amount</string>
     <string name="balance_amount">Balance Amount</string>
     <string name="credit_limit">Credit Limit</string>
     <string name="current_day_offers">Current day Offers</string>
