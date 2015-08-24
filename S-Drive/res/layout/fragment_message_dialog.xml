@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="#e9e4cd"
+    android:layout_height="wrap_content" >
+    
+       <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/close" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_header"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/heading_strip"
+        android:text="@string/booking_alloted" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_header"
+        android:id="@+id/ll_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <View android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/devider_line"
+        android:layout_margin="5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/ll_content"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/devider_line"
+        android:id="@+id/ll_footer"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
