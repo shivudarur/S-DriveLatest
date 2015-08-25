@@ -10,6 +10,8 @@
     <string name="phone_number_hint"><font size="9">Enter Your 10 Digit Mobile Number</font></string>
     <string name="driver_login">Driver Login</string>
     <string name="login">LOGIN</string>
+    <string name="payment_successful">Payment Successful</string>
+    <string name="do_you_want_continuity">Do You want Continuity next Booking</string>
     <string name="pay_in_advance">Pay In Advance</string>
     <string name="continue_str">Continue</string>
     <string name="dear">Dear</string>
@@ -29,6 +31,7 @@
     <string name="bookings">Bookings</string>
     <string name="earnings">Earnings</string>
     <string name="logout">Logout</string>
+    <string name="yes">Yes</string>
     <string name="earn_with_sigma">Earn With Sigma</string>
     <string name="reason">Reason</string>
     <string name="your_credit_limit_crossed">Your Credit Limit Crossed</string>

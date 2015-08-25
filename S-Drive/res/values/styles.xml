@@ -2,13 +2,13 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -78,6 +78,33 @@
         <item name="android:gravity">center</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="largeTextSytle" parent="android:Widget.TextView">
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="mediumTextSytle" parent="android:Widget.TextView">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="smallTextSytle" parent="android:Widget.TextView">
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="small_black_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingTop">@dimen/five</item>
+        <item name="android:paddingBottom">@dimen/five</item>
+        <item name="android:paddingLeft">@dimen/twenty</item>
+        <item name="android:paddingRight">@dimen/twenty</item>
+        <item name="android:layout_marginTop">@dimen/ten</item>
+        <item name="android:layout_marginBottom">@dimen/ten</item>
+        <item name="android:layout_marginLeft">@dimen/thirty</item>
+        <item name="android:layout_marginRight">@dimen/thirty</item>
+        <item name="android:layout_height">@dimen/fifty</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/selector_black_button</item>
     </style>
 
 </resources>

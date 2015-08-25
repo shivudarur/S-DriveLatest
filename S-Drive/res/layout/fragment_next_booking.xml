@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/logo_header_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logo"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@+id/logo"
+            android:text="@string/sigma_taxi"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textColor="@android:color/tertiary_text_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/logo_header_text"
+            android:layout_below="@+id/logo_header_text"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_toRightOf="@+id/logo"
+            android:text="@string/dedicated_to_dedication" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_logo_container"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/twenty" >
+
+        <TextView
+            android:id="@+id/tv_paymentHeader"
+            style="@style/largeTextSytle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seventy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/shape_top_round_corners"
+            android:gravity="center"
+            android:text="@string/payment_successful" />
+
+        <TextView
+            android:id="@+id/tv_do_you_want_continuity"
+            style="@style/mediumTextSytle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/one_fifty"
+            android:layout_alignLeft="@+id/tv_paymentHeader"
+            android:layout_alignRight="@+id/tv_paymentHeader"
+            android:layout_below="@+id/tv_paymentHeader"
+            android:background="@color/transperant_strip_op_90"
+            android:gravity="center"
+            android:padding="@dimen/twenty"
+            android:text="@string/do_you_want_continuity"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:id="@+id/ll_loginButtonLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/seventy"
+            android:layout_below="@+id/tv_do_you_want_continuity"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bgftr" >
+
+            <Button
+                android:id="@+id/btn_logout"
+                style="@style/small_black_button"
+                android:text="@string/logout" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/btn_yes"
+                style="@style/small_black_button"
+                android:text="@string/yes" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

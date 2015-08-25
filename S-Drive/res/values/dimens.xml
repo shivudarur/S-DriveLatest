@@ -17,5 +17,6 @@
     <dimen name="eighty">80dp</dimen>
     <dimen name="ninty">90dp</dimen>
     <dimen name="hundred">100dp</dimen>
+    <dimen name="one_fifty">150dp</dimen>
 
 </resources>
