@@ -74,7 +74,7 @@
         <LinearLayout
             android:id="@+id/ll_phNumberLayout"
             android:layout_width="fill_parent"
-            android:layout_height="@dimen/seventy"
+            android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/ll_loginHeader"
             android:layout_alignRight="@+id/ll_loginHeader"
             android:layout_below="@+id/ll_loginHeader"

@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="100dp"
     android:background="@color/footer"
-    android:orientation="horizontal"
-    android:gravity="center_vertical" >
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
 
     <ImageButton
         android:id="@+id/earn_with_sigma_btn"
@@ -16,11 +16,13 @@
 
     <TextView
         android:id="@+id/textView"
+        style="@style/largeTextSytle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:text="@string/earn_with_sigma"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:textStyle="bold" />
 
 </LinearLayout>

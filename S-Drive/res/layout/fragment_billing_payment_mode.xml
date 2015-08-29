@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment" >
+
+    <include
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_with_back"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:id="@+id/top_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/largeTextSytle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/footer"
+            android:gravity="center"
+            android:text="@string/billing_details"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/green_bg1"
+            android:gravity="center"
+            android:weightSum="2" >
+
+            <TextView
+                android:id="@+id/totalpayable_hd"
+                style="@style/largeTextSytle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/total_payable"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="2dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/total_payable_tv"
+                style="@style/largeTextSytle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2000"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/top_content"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/mediumTextSytle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/shape_btn_round_corners"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/select_payment_mode"
+            android:textColor="@color/white" />
+
+        <GridView
+            android:id="@+id/gridViewCustom"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+</RelativeLayout>

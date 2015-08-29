@@ -7,6 +7,14 @@
     <color name="black_op_dd">#dd262324</color>
     <color name="transperant_strip">#60a3a3a3</color>
     <color name="transperant_strip_op_90">#90a3a3a3</color>
+    <color name="menutext">#262324</color>
+    <color name="headingtext1">#262324</color>
+    <color name="headingmediumtext1">#5f5e5d</color>
+    <color name="profileheaderbg">#90171c0f</color>
+    <color name="menu_yellow">#e3b600</color>
+    <color name="green_bg1">#2a4b00</color>
+    <color name="light_black">#a9a9a9</color>
+    <color name="orange_bg">#a44f00</color>
     <color name="orange_yellow">#ed9600</color>
     <color name="orange_yellow_dd">#dded9600</color>
     <color name="green">#2a4b00</color>

@@ -15,15 +15,19 @@ import android.widget.TextView;
 import com.sigmataxi.sdrive.R;
 import com.sigmataxi.sdrive.model.MenuIcon;
 
-public class MainMenuGridAdapter extends ArrayAdapter {
+public class BillingPaymentModeGridAdapter extends ArrayAdapter {
 	Context context;
 	ArrayList<MenuIcon> menuIconArray;
 
-	public MainMenuGridAdapter(Context context,
-			ArrayList<MenuIcon> menuIconArray) {
+	String gridMode;
+
+	public BillingPaymentModeGridAdapter(Context context,
+			ArrayList<MenuIcon> menuIconArray, String gridMode) {
 		super(context, 0);
 		this.context = context;
 		this.menuIconArray = menuIconArray;
+
+		this.gridMode = gridMode;
 
 	}
 
@@ -37,7 +41,14 @@ public class MainMenuGridAdapter extends ArrayAdapter {
 
 		if (row == null) {
 			LayoutInflater inflater = ((Activity) context).getLayoutInflater();
-			row = inflater.inflate(R.layout.main_menu_grid_item, parent, false);
+
+			if (gridMode.equalsIgnoreCase("selectemode"))
+				row = inflater
+						.inflate(R.layout.payment_mode_selected_grid_item,
+								parent, false);
+			else
+				row = inflater.inflate(R.layout.payment_mode_menu_grid_item,
+						parent, false);
 
 			TextView textViewTitle = (TextView) row.findViewById(R.id.textView);
 			ImageView imageViewIte = (ImageView) row

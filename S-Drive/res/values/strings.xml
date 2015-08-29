@@ -10,6 +10,8 @@
     <string name="phone_number_hint"><font size="9">Enter Your 10 Digit Mobile Number</font></string>
     <string name="driver_login">Driver Login</string>
     <string name="login">LOGIN</string>
+    <!-- end of Login -->
+    <!-- Home -->
     <string name="payment_successful">Payment Successful</string>
     <string name="do_you_want_continuity">Do You want Continuity next Booking</string>
     <string name="pay_in_advance">Pay In Advance</string>
@@ -25,6 +27,9 @@
     <string name="str_continue">Continue</string>
     <string name="click_here">Click here</string>
     <string name="to_pay_in_advance">to Pay In Advance</string>
+    <string name="int_place_holder">1000/-</string>
+    <string name="place_holder">place holder</string>
+    <!-- end of Home -->
     <!-- Logout -->
     <string name="next_login_details">Next Login Details</string>
     <string name="location">Location</string>
@@ -40,6 +45,8 @@
     <string name="current_location">"Current Location"</string>
     <string name="expected_login_location">"Expected Login Location"</string>
     <string name="submit">Submit</string>
+    <!-- End of Logout -->
+
     <string name="earn_with_sigma">Earn With Sigma</string>
     <string name="reason">Reason</string>
     <string name="your_credit_limit_crossed">Your Credit Limit Crossed</string>
@@ -64,7 +71,7 @@
     <!-- <string name="booking_alloted_msg">CBN %s is alloted to %s with Driver Acceptance</string> -->
 
 
-    <!-- main menu strings -->
+    <!-- main menu stringsss -->
     <string name="my_trips">My Trips</string>
     <string name="my_account">My Account</string>
     <string name="my_vehicle">My Vehicle</string>
@@ -74,5 +81,16 @@
     <string name="driver_guide">Driver Guide</string>
     <string name="guarage_support">Guarage Support</string>
     <string name="request">Request</string>
+
+    <!-- fragment billing payment mode stringsss -->
+    <string name="billing_details">\u20B9 Billing Details</string>
+    <string name="total_payable">Total Payable</string>
+    <string name="select_payment_mode">Select Payment Mode</string>
+    <string name="cash_pay">Cash Pay</string>
+    <string name="card_swiping">Card Swiping</string>
+    <string name="wallet">Wallet</string>
+    <string name="travel_card">Travel Card</string>
+    <string name="actual_pay">Actual Pay</string>
+    <string name="other_payment_modes">Other Payment Mode</string>
 
 </resources>

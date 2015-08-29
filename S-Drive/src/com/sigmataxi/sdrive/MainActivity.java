@@ -10,7 +10,7 @@ public class MainActivity extends BaseActivity {
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new MainMenuFragment()).commit();
+					.add(R.id.container, new HomeFragment()).commit();
 		}
 	}
 

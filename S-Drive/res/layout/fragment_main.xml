@@ -7,9 +7,10 @@
     <include
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="125dp"
         android:layout_alignParentTop="true"
-        layout="@layout/profile_header" />
+        layout="@layout/profile_header"
+        android:background="@drawable/background" />
 
     <GridView
         android:id="@+id/gridViewCustom"
@@ -17,10 +18,8 @@
         android:layout_height="fill_parent"
         android:layout_above="@+id/footer"
         android:layout_below="@+id/header"
-        android:layout_margin="4dp"
-        android:columnWidth="80dp"
         android:gravity="center"
-        android:numColumns="auto_fit"
+        android:numColumns="3"
         android:stretchMode="columnWidth" />
 
     <include

@@ -1,12 +1,83 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_header_bg"
     android:orientation="vertical" >
 
     <include
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         layout="@layout/header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_loginBg"
+                style="@style/profilepic"
+                android:src="@drawable/profile_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="top" >
+
+                <TextView
+                    android:id="@+id/driver_tv"
+                    style="@style/largeTextSytle"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="DR.Mr.Abdulajhfkjakhfhjs"
+                    android:textColor="@color/headingtext1"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/comments_img"
+                    style="@style/nofiticationicons"
+                    android:background="@drawable/comments" />
+
+                <TextView
+                    android:id="@+id/comments_badge"
+                    style="@style/badgeicon" />
+
+                <Button
+                    android:id="@+id/alert_img"
+                    style="@style/nofiticationicons"
+                    android:background="@drawable/alert" />
+
+                <TextView
+                    android:id="@+id/alert_badge"
+                    style="@style/badgeicon" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/smallTextSytle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Visited 09th Aug 2015, 12:38:13 IST"
+                android:textColor="@color/headingmediumtext1" />
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
