@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProgressBillFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/largeTextSytle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/footer"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="@string/billing_details"
+        android:textColor="@color/White" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/largeTextSytle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty"
+        android:gravity="center"
+        android:text="@string/total_payable"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/iv_bill_icon_big"
+        android:layout_width="@dimen/hundred"
+        android:layout_height="@dimen/hundred"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/twenty"
+        android:src="@drawable/bill_icon_big" />
+
+<!--     <ProgressBar -->
+<!--         android:id="@+id/progressBar1" -->
+<!--         style="?android:attr/progressBarStyleLarge" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="center_horizontal" -->
+<!--         android:layout_marginTop="@dimen/twenty" -->
+<!--         android:progressDrawable="@drawable/loading" /> -->
+
+<ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="@dimen/fifty"
+        android:layout_height="@dimen/fifty"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/twenty"
+        android:src="@drawable/loading" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/mediumTextSytle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:gravity="center"
+        android:padding="@dimen/ten"
+        android:text="@string/receiving_bill_from_server"
+        android:textColor="@color/black" />
+
+</LinearLayout>
