@@ -20,7 +20,7 @@ public class LoginActivity extends BaseActivity {
 		setContentView(R.layout.activity_login);
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
-					.add(R.id.container, new LoginFragment()).commit();
+					.add(R.id.container, new GenerateBillFragment()).commit();
 		}
 	}
 

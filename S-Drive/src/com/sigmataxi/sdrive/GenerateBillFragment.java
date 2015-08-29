@@ -7,37 +7,36 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
-public class NextBookingFragment extends Fragment {
+public class GenerateBillFragment extends Fragment {
 
-	public NextBookingFragment() {
+	public GenerateBillFragment() {
 	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_next_booking,
+		View rootView = inflater.inflate(R.layout.fragment_generate_bill,
 				container, false);
 		init(rootView);
 		return rootView;
 	}
 
 	private void init(View rootView) {
-		rootView.findViewById(R.id.btn_logout).setOnClickListener(
-				new OnClickListener() {
-
-					@Override
-					public void onClick(View v) {
-						openLogoutFragment();
-
-					}
-				});
+//		rootView.findViewById(R.id.btn_continue).setOnClickListener(
+//				new OnClickListener() {
+//
+//					@Override
+//					public void onClick(View v) {
+//						openMainMenuFragment();
+//
+//					}
+//				});
 	}
 
-	private void openLogoutFragment() {
+	private void openMainMenuFragment() {
 
 		getActivity().getSupportFragmentManager().beginTransaction()
-				.replace(R.id.container, new ProgressBillFragment()).commit();
-		;
+				.replace(R.id.container, new MainMenuFragment()).commit();
 	}
 
 }

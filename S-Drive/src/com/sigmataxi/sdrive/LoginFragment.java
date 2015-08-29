@@ -26,10 +26,6 @@ public class LoginFragment extends Fragment {
 	}
 
 	private void init(View rootView) {
-		View target = rootView.findViewById(R.id.btn_loginButton);
-		BadgeView badge = new BadgeView(getActivity(), target);
-		badge.setText("1");
-		badge.show();
 		rootView.findViewById(R.id.btn_loginButton).setOnClickListener(
 				new OnClickListener() {
 
