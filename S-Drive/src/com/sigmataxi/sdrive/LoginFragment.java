@@ -23,22 +23,24 @@ public class LoginFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_login,
-				container, false);
+		View rootView = inflater.inflate(R.layout.fragment_login, container,
+				false);
+
+		init(rootView);
+
+		return rootView;
+	}
+
+	private void init(View rootView) {
 		rootView.findViewById(R.id.btn_loginButton).setOnClickListener(
 				new OnClickListener() {
 
 					@Override
 					public void onClick(View v) {
-						((LoginActivity) getActivity())
-								.loginBtnClickManagerForPopup(); /*
-																 * .
-																 * loginBtnClickManager
-																 * ();
-																 */
+						((LoginActivity) getActivity()).loginBtnClickManager();
+
 					}
 				});
-		return rootView;
 	}
 
 }
