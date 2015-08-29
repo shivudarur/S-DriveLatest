@@ -25,6 +25,8 @@
     <string name="str_continue">Continue</string>
     <string name="click_here">Click here</string>
     <string name="to_pay_in_advance">to Pay In Advance</string>
+    <!-- Logout -->
+    <string name="next_login_details">Next Login Details</string>
     <string name="location">Location</string>
     <string name="status">Status</string>
     <string name="time">Time</string>
@@ -32,6 +34,12 @@
     <string name="earnings">Earnings</string>
     <string name="logout">Logout</string>
     <string name="yes">Yes</string>
+    <string name="driver_name">Driver Name</string>
+    <string name="colon">:</string>
+    <string name="driver_id">Driver ID</string>
+    <string name="current_location">"Current Location"</string>
+    <string name="expected_login_location">"Expected Login Location"</string>
+    <string name="submit">Submit</string>
     <string name="earn_with_sigma">Earn With Sigma</string>
     <string name="reason">Reason</string>
     <string name="your_credit_limit_crossed">Your Credit Limit Crossed</string>
