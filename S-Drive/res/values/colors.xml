@@ -174,4 +174,12 @@
 
     <!-- end of all standard colors -->
 
+
+    <!-- fragment generate bill -->
+    <color name="bill_item_bg">#f7ecda</color>
+    <color name="bill_orange_bg">#e99b16</color>
+    <color name="bill_item1_bg">#fff7eb</color>
+    <color name="bill_item">#cc6a00</color>
+    <color name="footer_btn">#fbf0d2</color>
+
 </resources>

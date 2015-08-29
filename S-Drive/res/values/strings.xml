@@ -93,4 +93,19 @@
     <string name="actual_pay">Actual Pay</string>
     <string name="other_payment_modes">Other Payment Mode</string>
 
+    <!-- fragment process bill -->
+    <string name="receiving_bill_from_server">"Receiving Bill From Server"</string>
+    <!-- End of fragment process bill -->
+
+
+    <!-- fragment generate bill -->
+    <string name="fare_breakup">FARE BREAKUP</string>
+    <string name="travelled_distace">"Travelled Distace"</string>
+    <string name="first_10km">First 10km</string>
+    <string name="extra_12kms">Extra 12kms(12/km)</string>
+    <string name="total_trip_time">Total Trip Time</string>
+    <string name="free_trip_time">Free Trip Time(10 min)</string>
+    <string name="trip_time_charge">Trip Time Charge for 41 min</string>
+    <!-- End of fragment generate bill -->
+
 </resources>
