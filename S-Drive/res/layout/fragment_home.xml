@@ -118,20 +118,20 @@
     <RelativeLayout
         android:id="@+id/rl_current_day_offers_container"
         android:layout_width="fill_parent"
-        android:layout_height="80dip"
+        android:layout_height="@dimen/eighty"
         android:layout_below="@+id/rl_home_options"
-        android:layout_marginLeft="20dip"
-        android:layout_marginRight="20dip"
+        android:layout_marginLeft="@dimen/twenty"
+        android:layout_marginRight="@dimen/twenty"
         android:background="@drawable/bgftr"
-        android:paddingBottom="10dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        android:paddingTop="20dp" >
+        android:paddingBottom="@dimen/ten"
+        android:paddingLeft="@dimen/twenty"
+        android:paddingRight="@dimen/twenty"
+        android:paddingTop="@dimen/twenty" >
 
         <Button
             android:id="@+id/btn_current_day_offers"
             android:layout_width="wrap_content"
-            android:layout_height="50dip"
+            android:layout_height="@dimen/fifty"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/iv_special_offer"
@@ -141,8 +141,8 @@
 
         <ImageView
             android:id="@+id/iv_special_offer"
-            android:layout_width="70dip"
-            android:layout_height="70dip"
+            android:layout_width="@dimen/seventy"
+            android:layout_height="@dimen/seventy"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/btn_current_day_offers"
             android:src="@drawable/special_offer" />

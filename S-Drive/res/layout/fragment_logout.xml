@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" >
+
+        <RelativeLayout
+            android:id="@+id/rl_logo_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/thirty"
+            android:gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/logo_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/logo"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_toRightOf="@+id/logo"
+                android:text="@string/sigma_taxi"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="@android:color/tertiary_text_dark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/logo_header_text"
+                android:layout_below="@+id/logo_header_text"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_toRightOf="@+id/logo"
+                android:text="@string/dedicated_to_dedication" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_drver_details_conatiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_current_day_offers_container"
+            android:layout_alignRight="@+id/rl_current_day_offers_container"
+            android:layout_below="@+id/rl_logo_container"
+            android:layout_marginLeft="@dimen/fifteen"
+            android:layout_marginRight="@dimen/fifteen"
+            android:layout_marginTop="@dimen/twenty" >
+
+            <LinearLayout
+                android:id="@+id/ll_loginHeader"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/seventy"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/shape_top_round_corners"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/iv_loginBg"
+                    android:layout_width="@dimen/sixty"
+                    android:layout_height="@dimen/sixty"
+                    android:background="@drawable/shape_circle_border"
+                    android:src="@drawable/profile_pic" />
+
+                <TextView
+                    android:id="@+id/next_login_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/ten"
+                    android:text="@string/next_login_details"
+                    android:textAppearance="@android:style/TextAppearance.Medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_driverDetailsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ll_loginHeader"
+                android:layout_alignRight="@+id/ll_loginHeader"
+                android:layout_below="@+id/ll_loginHeader"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transperant_strip_op_90"
+                android:orientation="vertical"
+                android:padding="@dimen/ten" >
+
+                <TableLayout
+                    android:id="@+id/tl_driverDetailsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:shrinkColumns="1"
+                    android:stretchColumns="1" >
+
+                    <!-- Row 1 with single column -->
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/label_driver_name"
+                            style="@style/label"
+                            android:text="@string/driver_name" />
+
+                        <TextView style="@style/colon" />
+
+                        <TextView
+                            android:id="@+id/driver_name"
+                            style="@style/driver_detail" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/label_driver_id"
+                            style="@style/label"
+                            android:text="@string/driver_id" />
+
+                        <TextView style="@style/colon" />
+
+                        <TextView
+                            android:id="@+id/driver_id"
+                            style="@style/driver_detail" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal" >
+
+                        <TextView
+                            android:id="@+id/label_current_location"
+                            style="@style/label"
+                            android:text="@string/current_location" />
+
+                        <TextView style="@style/colon" />
+
+                        <TextView
+                            android:id="@+id/current_location"
+                            style="@style/driver_detail" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:id="@+id/dateTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/calender"
+                        style="@style/date_time_picker_text"
+                        android:drawableRight="@drawable/calender" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        style="@style/date_time_picker_text"
+                        android:layout_marginLeft="@dimen/ten"
+                        android:drawableRight="@drawable/time" />
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/spinner_show"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawSelectorOnTop="true" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_current_day_offers_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/eighty"
+            android:layout_below="@+id/rl_drver_details_conatiner"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"
+            android:background="@drawable/bgftr"
+            android:paddingBottom="@dimen/ten"
+            android:paddingLeft="@dimen/twenty"
+            android:paddingRight="@dimen/twenty" >
+
+            <Button
+                android:id="@+id/btn_current_day_offers"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/fifty"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/iv_special_offer"
+                android:background="@drawable/selector_orange_button"
+                android:text="@string/current_day_offers"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/iv_special_offer"
+                android:layout_width="@dimen/seventy"
+                android:layout_height="@dimen/seventy"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/btn_current_day_offers"
+                android:src="@drawable/special_offer" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/black_button"
+            android:layout_width="wrap_content"
+            android:layout_alignLeft="@+id/rl_drver_details_conatiner"
+            android:layout_below="@+id/rl_current_day_offers_container"
+            android:layout_margin="@dimen/twenty"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/black_button"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/btn_cancel"
+            android:layout_alignRight="@+id/rl_drver_details_conatiner"
+            android:text="@string/submit" />
+    </RelativeLayout>
+
+</ScrollView>
